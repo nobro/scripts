@@ -6,7 +6,7 @@ Usage:
   - run this module without arguments --> get help
   - run with '--inputfile' or '-i' --> will select the picture to be converted - Must be set!
   - run with '--outputfile' or '-o' --> will select the outfile to store the results
-  - run with '--clipboard' or '-c' --> will copy the result to the clipboard too for easy paste
+  - run with '-c' not 0 --> will copy the result to the clipboard too for easy paste
   - run with '--help' or '-h' --> shows standard help message
 """
 import pyperclip
