@@ -32,7 +32,7 @@ def main():
     \__/ \____//_.___/\__,_/ /____/ \___/\____/   /_/     by (a) n(o)ob
                  '''),
         epilog='''Simple script to convert a picture to html base64 encoded.''')
-    parser.add_argument('-i', '--inputfile', help='select picture', required=True)  # required param
+    parser.add_argument('inputfile', help='select picture')  # required param
     parser.add_argument('-o', '--outputfile', help='select output file')  # optional param
     parser.add_argument('-c', '--clipboard', action='store_true',
                         help='copy result to clipboard for easy paste')  # optional param
