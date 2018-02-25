@@ -22,14 +22,15 @@ print("Lista fisiere din directorul curent: ", onlyfiles)
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='tobase64.py',
+        prog='pic2base64.py',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent('''\
-    _____      ______                    ____________ __
-    __  /_________  /_______ ______________  ___/_  // /
-    _  __/  __ \_  __ \  __ `/_  ___/  _ \  __ \_  // /_
-    / /_ / /_/ /  /_/ / /_/ /_(__  )/  __/ /_/ //__  __/
-    \__/ \____//_.___/\__,_/ /____/ \___/\____/   /_/     by (a) n(o)ob
+██████╗ ██╗ ██████╗██████╗ ██████╗  █████╗ ███████╗███████╗ ██████╗ ██╗  ██╗
+██╔══██╗██║██╔════╝╚════██╗██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝ ██║  ██║
+██████╔╝██║██║      █████╔╝██████╔╝███████║███████╗█████╗  ███████╗ ███████║
+██╔═══╝ ██║██║     ██╔═══╝ ██╔══██╗██╔══██║╚════██║██╔══╝  ██╔═══██╗╚════██║
+██║     ██║╚██████╗███████╗██████╔╝██║  ██║███████║███████╗╚██████╔╝     ██║
+╚═╝     ╚═╝ ╚═════╝╚══════╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝      ╚═╝
                  '''),
         epilog='''Simple script to convert a picture to html base64 encoded.''')
     parser.add_argument('inputfile', help='select picture')  # required param
