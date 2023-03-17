@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#check argumente script
+#check args script
 if [ $# -ne 2 ]
 	then
-		echo "trebuie trecuta optiunea (a pt all tests, s doar OSINT) si un singur domeniu"
-		echo "scriptul nu are 2 argumente" >&2
+		echo "an option must be used (a for all tests, s only OSINT) and only one domain"
+		echo "the script does not have 2 arguments" >&2
 		exit 1
 fi
 
@@ -12,12 +12,12 @@ fi
 optiune=$1
 domeniu=$2
 
-#todo de verificat domeniul ca e fara subdomenii, are max 63 caractere, etc
+#check that there are no subdomains. there are 63 characters max, etc
 if [[ $domeniu =~ ^([a-zA-Z0-9-]{2,63})[.]([a-zA-Z]{2,63})$  ]]
 	then
-		echo "domeniul pare ok"
+		echo "the domain looks OK"
 	else
-		echo "domeniul pare cam dubios" >&2
+		echo "the domain does not look to be valid" >&2
 		exit 1
 fi
 
